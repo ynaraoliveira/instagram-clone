@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+*,
+p {
+  font-family: Arial;
+}
+
+body {
+  max-width: 375px;
+  margin: auto;
+  background-color: #fafafa;
+}
+
+.tab-bar .action-icon {
+  width: 24px;
+  height: auto;
+  cursor: pointer;
+  margin: 0 15px;
+}
+
+.tab-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  background-color: #f2f2f2;
+  position: sticky;
+  bottom: 0;
+  padding: 10px 0;
+  border-top: 1px solid #e2e2e2;
+}
+.tab-bar .action-icon {
+  width: 22px;
+}
+
+.search-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px 8px 8px;
+}
+.search-box .search-input {
+  width: 327px;
+  height: 36px;
+  background: rgba(118, 118, 128, 0.12);
+  border: none;
+  border-radius: 10px;
+  color: #979797;
+  background-image: url(../../../assets/icon/loupe.png);
+  background-repeat: no-repeat;
+  background-position: 13px;
+}
+.search-box .search-input::placeholder {
+  font-size: 16px;
+  line-height: 22px;
+  padding: 6px 34px 8px;
+}
+.search-box .search-input:focus {
+  outline-style: none;
+}
+.search-box .icon-live {
+  padding: 0 10px;
+}
+
+.buttons-container {
+  display: flex;
+  max-width: 100%;
+  overflow-x: auto;
+  padding-bottom: 5px;
+  font-size: 14px;
+}
+.buttons-container .btn-topics {
+  background: #fafafa;
+  border-radius: 6px;
+  border: 1px solid rgba(60, 60, 67, 0.18);
+  margin: 0 3px;
+  padding: 8px 11px;
+  display: flex;
+}
+.buttons-container .btn-topics img {
+  padding-right: 7px;
+}
+.buttons-container::-webkit-scrollbar {
+  display: none;
+}
+
+.search-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.search-container img {
+  width: 123px;
+  height: 120px;
+  padding: 0.5px;
+  margin: 0;
+}
+@media (max-width: 374px) {
+  .search-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1px;
+  }
+  .search-container img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=search.css.map */

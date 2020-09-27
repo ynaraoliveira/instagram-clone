@@ -1,0 +1,80 @@
+@import "../styles.scss";
+
+.search-box {
+   @include simple-flex(space-around, center, row);
+   padding: 10px 8px 8px;
+
+   .search-input {
+      width: 327px;
+      height: 36px;
+      background: $background-tertiary;
+      border: none;
+      border-radius: 10px;
+      color: $color-fill;
+      background-image: url(../../../assets/icon/loupe.png);
+      background-repeat: no-repeat;
+      background-position: 13px;
+
+      &::placeholder {
+         font-size: 16px;
+         line-height: 22px;
+         padding: 6px 34px 8px;
+      }
+
+      &:focus {
+         outline-style: none;
+      }
+   }
+
+   .icon-live {
+      padding: 0 10px;
+   }
+}
+
+.buttons-container {
+   display: flex;
+   max-width: 100%;
+   overflow-x: auto;
+   padding-bottom: 5px;
+   font-size: 14px;
+
+   .btn-topics {
+      background: $background-primary;
+      border-radius: 6px;
+      border: 1px solid $border-btn;
+      margin: 0 3px;
+      padding: 8px 11px;
+      display: flex;
+
+      img {
+         padding-right: 7px;
+      }
+   }
+
+   &::-webkit-scrollbar {
+      display: none;
+   }
+}
+
+.search-container {
+   @include simple-flex(space-around, center, row);
+   flex-wrap: wrap;
+
+   img {
+      width: 123px;
+      height: 120px;
+      padding: .5px;
+      margin: 0;
+   }
+
+   @media (max-width: 374px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 1px;
+
+      img {
+         max-width: 100%;
+         height: auto;
+      }
+   }
+}
