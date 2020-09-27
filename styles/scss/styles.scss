@@ -21,6 +21,10 @@ body {
   margin: 0 15px;
 }
 
+.author-name {
+  font-weight: bold;
+}
+
 .tab-bar {
   @include simple-flex(space-between, center, row);
   width: 100%;

@@ -1,0 +1,83 @@
+@import "../styles.scss";
+
+.header {
+
+   .notification-tab {
+      @include simple-flex(center, center, row);
+
+      &-follow {
+         color: $color-fill;
+      }
+
+      &-you {
+         border-bottom: 2px solid $text-color;
+         position: relative;
+         top: 1px;
+      }
+
+      p {
+         padding: 12px;
+         line-height: 21px;
+         width: 180px;
+         text-align: center;
+         font-weight: 600;
+      }
+   }
+
+   .follow-requests {
+      line-height: 20px;
+      padding: 14px 16px;
+      border-top: 1px solid $border-btn;
+      border-bottom: 1px solid $border-btn;
+      font-weight: 100;
+   }
+}
+
+.notification-info {
+   height: 100%;
+   overflow-y: auto;
+
+   &::-webkit-scrollbar {
+      display: none;
+   }
+
+   p {
+      padding: 13px 16px 8px;
+   }
+
+   .container-info {
+      @include simple-flex(space-between, center, row);
+      border-bottom: 1px solid $border-btn;
+      padding: 8px 16px;
+
+      .container-user-pic {
+         position: relative;
+      }
+
+      .user-pic {
+         @include box-round(44px);
+
+      }
+
+      .user-pic-top {
+         border: 2px solid #fff;
+         // position: absolute;
+         // top: 20px;
+         // left: -20px;
+      }
+
+      .notification-text {
+         font-size: 13px;
+         margin-right: auto;
+      }
+
+      .notification-time {
+         color: $color-fill;
+      }
+
+      .liked-pic {
+         width: 44px;
+         height: auto;
+      }
+   }
+}
