@@ -71,13 +71,34 @@
          margin-right: auto;
       }
 
-      .notification-time {
+      .lighter-text {
          color: $color-fill;
+
+         img {
+            width: 12px;
+            padding: 14px 14px 0 0;
+         }
       }
 
       .liked-pic {
          width: 44px;
          height: auto;
+      }
+
+      button {
+         @extend %btn;
+      }
+
+      .btn-msg {
+         @extend %light-border;
+         background: $background-primary;
+         padding: 5px 15px;
+      }
+
+      .btn-follow {
+         background: $highlight-color;
+         color: $background-primary;
+         padding: 5px 23px;
       }
    }
 }
