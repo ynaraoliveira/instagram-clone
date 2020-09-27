@@ -47,23 +47,23 @@
 
    .container-info {
       @include simple-flex(space-between, center, row);
-      border-bottom: 1px solid $border-btn;
       padding: 8px 16px;
-
-      .container-user-pic {
-         position: relative;
-      }
+      position: relative;
 
       .user-pic {
          @include box-round(44px);
-
       }
 
       .user-pic-top {
+         position: absolute;
+         top: 28px;
+         left: 22px;
          border: 2px solid #fff;
-         // position: absolute;
-         // top: 20px;
-         // left: -20px;
+      }
+
+      .user-pic-bottom,
+      .user-pic-top {
+         @include box-round(32px);
       }
 
       .notification-text {

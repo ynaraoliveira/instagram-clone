@@ -25,6 +25,14 @@ body {
   font-weight: bold;
 }
 
+.user-tag {
+  color: #05396B;
+}
+
+.notification-info-container {
+  border-bottom: 1px solid $border-btn;
+}
+
 .tab-bar {
   @include simple-flex(space-between, center, row);
   width: 100%;

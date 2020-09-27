@@ -31,6 +31,14 @@ body {
   font-weight: bold;
 }
 
+.user-tag {
+  color: #05396B;
+}
+
+.notification-info-container {
+  border-bottom: 1px solid rgba(60, 60, 67, 0.18);
+}
+
 .tab-bar {
   display: flex;
   justify-content: space-between;
@@ -91,10 +99,7 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  border-bottom: 1px solid rgba(60, 60, 67, 0.18);
   padding: 8px 16px;
-}
-.notification-info .container-info .container-user-pic {
   position: relative;
 }
 .notification-info .container-info .user-pic {
@@ -103,7 +108,16 @@ body {
   border-radius: 50%;
 }
 .notification-info .container-info .user-pic-top {
+  position: absolute;
+  top: 28px;
+  left: 22px;
   border: 2px solid #fff;
+}
+.notification-info .container-info .user-pic-bottom,
+.notification-info .container-info .user-pic-top {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
 }
 .notification-info .container-info .notification-text {
   font-size: 13px;
