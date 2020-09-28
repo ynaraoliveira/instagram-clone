@@ -1,0 +1,24 @@
+@import "../styles.scss";
+
+.search-container {
+   @include simple-flex(space-around, center, row);
+   flex-wrap: wrap;
+
+   img {
+      width: 123px;
+      height: 120px;
+      padding: .5px;
+      margin: 0;
+   }
+
+   @media (max-width: 374px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 1px;
+
+      img {
+         max-width: 100%;
+         height: auto;
+      }
+   }
+}
