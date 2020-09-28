@@ -1,5 +1,49 @@
 @import "../styles.scss";
 
+.header {
+   @include simple-flex(space-between, center, row);
+
+   .name-container {
+      @include simple-flex(center, center, row);
+      margin: auto;
+
+      .author-name {
+         padding: 11px 6px;
+      }
+
+      .arrow-down {
+         color: black;
+         font-weight: bold;
+      }
+   }
+
+   .menu-icon {
+      padding: 13px;
+      width: 20.5px;
+      height: 17.5px;
+   }
+}
+
+.ig-stats-container {
+   @include simple-flex(space-around, center, row);
+   padding: 12px 0;
+
+
+   .profile-pic {
+      position: relative;
+      width: 86px;
+   }
+
+   .stats-number {
+      @include simple-flex(center, center, column);
+   }
+
+   p {
+      font-size: 13px;
+   }
+}
+
+
 .search-container {
    @include simple-flex(space-around, center, row);
    flex-wrap: wrap;

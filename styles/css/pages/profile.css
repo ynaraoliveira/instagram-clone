@@ -55,6 +55,53 @@ body {
   width: 22px;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.header .name-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: auto;
+}
+.header .name-container .author-name {
+  padding: 11px 6px;
+}
+.header .name-container .arrow-down {
+  color: black;
+  font-weight: bold;
+}
+.header .menu-icon {
+  padding: 13px;
+  width: 20.5px;
+  height: 17.5px;
+}
+
+.ig-stats-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  padding: 12px 0;
+}
+.ig-stats-container .profile-pic {
+  position: relative;
+  width: 86px;
+}
+.ig-stats-container .stats-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.ig-stats-container p {
+  font-size: 13px;
+}
+
 .search-container {
   display: flex;
   justify-content: space-around;
